@@ -22,11 +22,11 @@
                     <div class="job_details_header">
                         <div class="single_jobs white-bg d-flex justify-content-between">
                             <div class="jobs_left d-flex align-items-center">
-                                <div class="thumb">
-                                    <img src="img/svg_icon/1.svg" alt="">
+                                <div class="">
+                                    <img src="{{ job.image.url }}" alt="" style="width:60px;height:60px">
                                 </div>
                                 <div class="jobs_conetent">
-                                    <a href="#"><h4>{{job}}</h4></a>
+                                    <a href="#"><h4>{{job}}</ h4></a>
                                     <div class="links_locat d-flex align-items-center">
                                         <div class="location">
                                             <p>{{job.category}}</p>

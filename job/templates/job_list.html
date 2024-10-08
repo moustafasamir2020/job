@@ -1,17 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-
-
-
-
-
-
-
-
-
-
 <!-- bradcam_area  -->
 <div class="bradcam_area bradcam_bg_1">
     <div class="container">
@@ -138,13 +127,13 @@
                                 <div class="single_jobs white-bg d-flex justify-content-between">
                                     <div class="jobs_left d-flex align-items-center">
                                         <div class="thumb">
-                                            <img src="{{ job.image.url }}" alt="">
+                                            <img src="{{job.image.url}}" alt="" style="width:60px;height:60px">
                                         </div>
                                         
                                             
                                         
                                         <div class="jobs_conetent">
-                                            <a href="job_details.html"><h4>{{job.title}}</h4></a>
+                                            <a href=" {% url 'job:job_detail' job.id %}"><h4>{{job.title}}</h4></a>
                                             <div class="links_locat d-flex align-items-center">
                                                 <div class="location">
                                                     <p>{{job.category}} </p>
